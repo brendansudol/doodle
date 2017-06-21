@@ -9,3 +9,9 @@ body {
     stroke-dashoffset: 0;
   }
 }
+
+.mb1 { margin-bottom: 1rem; }
+.p2 { padding: 2rem; }
+.block { display: block; }
+.border { border: 1px solid #eee; }
+.rounded { border-radius: .25rem; }

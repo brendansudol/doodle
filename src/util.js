@@ -1,4 +1,18 @@
-const { ceil, sqrt } = Math
+const { ceil, floor, random, sqrt } = Math
+
+const rand = (min, max) => floor(random() * (max - min + 1)) + min
+
+export const sample = arr => arr[rand(0, arr.length - 1)]
+
+export const animateStyles = (tot, ms = 2000) => (i, len, seen) => {
+  const time = ms / tot
+  return {
+    strokeDasharray: len,
+    strokeDashoffset: len,
+    animation: `dash ${time * len}ms linear forwards`,
+    animationDelay: `${time * seen}ms`
+  }
+}
 
 // calculate distance between two points on a plane
 const distance = (p1, p2) => {
