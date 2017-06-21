@@ -15,11 +15,15 @@ class App extends Component {
     const { doodles, animate } = this.state
 
     return (
-      <div className="p2">
+      <div className="p2 container">
         <button className="block mb1" type="button" onClick={this.refresh}>
           Draw!
         </button>
-        {animate && <Drawing data={sample(doodles)} />}
+        {animate &&
+          [...Array(20)].map((_, i) => (
+            <Drawing key={i} data={sample(doodles)} />
+          ))}
+        {}
       </div>
     )
   }

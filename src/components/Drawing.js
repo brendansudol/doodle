@@ -6,7 +6,12 @@ const Drawing = ({ data }) => {
   const css = animateStyles(lenTotal)
 
   return (
-    <svg className="border rounded" width="300" height="300">
+    <svg
+      className="align-bottom"
+      width="150"
+      height="150"
+      viewBox="0 0 300 300"
+    >
       <g transform="translate(22, 22)">
         {strokes.map((s, i) => (
           <path
@@ -14,7 +19,7 @@ const Drawing = ({ data }) => {
             d={s.d}
             fill="none"
             stroke="#000"
-            strokeWidth="4"
+            strokeWidth="5"
             style={css(i, s.len, s.lenPre)}
           />
         ))}
