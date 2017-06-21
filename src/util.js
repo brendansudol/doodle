@@ -45,3 +45,32 @@ export const getStrokeData = drawData => {
 
   return { strokes, lenTotal }
 }
+
+export const categories = [
+  'bear',
+  'beard',
+  'bird',
+  'bowtie',
+  'circle',
+  'cookie',
+  'crab',
+  'dog',
+  'dragon',
+  'ear',
+  'eye',
+  'eyeglasses',
+  'face',
+  'hat',
+  'headphones',
+  'hot dog',
+  'monkey',
+  'moustache',
+  'mouth',
+  'necklace',
+  'nose',
+  'sandwich',
+  'sock',
+  'wine bottle',
+  'wine glass',
+  'zigzag'
+]

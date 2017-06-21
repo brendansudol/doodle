@@ -1,15 +1,15 @@
 import React from 'react'
 import { animateStyles, getStrokeData } from '../util'
 
-const Drawing = ({ data }) => {
+const Drawing = ({ data, size = 100 }) => {
   const { lenTotal, strokes } = getStrokeData(data.drawing)
   const css = animateStyles(lenTotal)
 
   return (
     <svg
       className="align-bottom"
-      width="150"
-      height="150"
+      width={size}
+      height={size}
       viewBox="0 0 300 300"
     >
       <g transform="translate(22, 22)">

@@ -10,9 +10,10 @@ body {
   }
 }
 
-.mb1 { margin-bottom: 1rem; }
-.p2 { padding: 2rem; }
-.container { margin: 0 auto; max-width: 800px; }
+.mb2 { margin-bottom: 1rem; }
+.mr1 { margin-right: .5rem; }
+.p3 { padding: 2rem; }
+.container { margin: 0 auto; max-width: 620px; }
 .block { display: block; }
 .border { border: 1px solid #eee; }
 .align-bottom { vertical-align: bottom; }
