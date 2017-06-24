@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 import Drawing from './Drawing'
-import { categories, sample } from '../util'
+import { categories, colors, sample } from '../util'
 
 class App extends Component {
-  state = { animate: 1, category: 'cookie', doodles: null }
+  state = { animate: 1, category: 'bowtie', doodles: null }
 
   componentDidMount() {
     fetch(`${process.env.PUBLIC_URL}/data/doodles.json`)
@@ -47,7 +47,7 @@ class App extends Component {
               </div>
               {animate &&
                 [...Array(30)].map((_, i) => (
-                  <Drawing key={i} data={sample(data)} />
+                  <Drawing key={i} data={sample(data)} color={sample(colors)} />
                 ))}
             </div>}
       </div>

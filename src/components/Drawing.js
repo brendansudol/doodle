@@ -1,7 +1,7 @@
 import React from 'react'
 import { animateStyles, getStrokeData } from '../util'
 
-const Drawing = ({ data, size = 100 }) => {
+const Drawing = ({ color = '#000', data, size = 100 }) => {
   const { lenTotal, strokes } = getStrokeData(data.drawing)
   const css = animateStyles(lenTotal)
 
@@ -18,8 +18,8 @@ const Drawing = ({ data, size = 100 }) => {
             key={i}
             d={s.d}
             fill="none"
-            stroke="#000"
-            strokeWidth="5"
+            stroke={color}
+            strokeWidth="8"
             style={css(i, s.len, s.lenPre)}
           />
         ))}

@@ -74,3 +74,15 @@ export const categories = [
   'wine glass',
   'zigzag'
 ]
+
+export const colors = [
+  '#F44336',
+  '#9C27B0',
+  '#3F51B5',
+  '#2196F3',
+  '#00BCD4',
+  '#4CAF50',
+  '#FFEB3B',
+  '#FF9800',
+  '#FF5722'
+]
